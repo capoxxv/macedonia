@@ -45,3 +45,13 @@ html, body {
   transform: scaleY(2);
   transform-origin: top left;
 }
+/* animazione blink */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.blink-colon {
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+}

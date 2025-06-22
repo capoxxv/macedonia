@@ -13,14 +13,14 @@
 
   // 2) Funzione per formattare la data/ora con colon lampeggiante
   function formatOverlayDate(d) {
-    const dd   = String(d.getDate()).padStart(2,'0');
-    const mm   = String(d.getMonth()+1).padStart(2,'0');
-    const yyyy = d.getFullYear();
-    const hh   = String(d.getHours()).padStart(2,'0');
-    const min  = String(d.getMinutes()).padStart(2,'0');
-    const timeStr = `${hh}<span class="blink-colon">:</span>${min}`;
-    return `macedonia01<br>${dd}/${mm}/${yyyy} ${timeStr}`;
-  }
+  const dd   = String(d.getDate()).padStart(2,'0');
+  const mm   = String(d.getMonth()+1).padStart(2,'0');
+  const yyyy = d.getFullYear();
+  const hh   = String(d.getHours()).padStart(2,'0');
+  const min  = String(d.getMinutes()).padStart(2,'0');
+  const timeStr = `${hh}<span class="blink-colon">:</span>${min}`;
+  return `macedonia01<br>${dd}/${mm}/${yyyy} ${timeStr}<br><a href="https://www.instagram.com/ugostudiocosasarebbe/" target="_blank" class="overlay-link">ugostudio</a>`;
+}
 
   // 3) Al scroll calcola frame e aggiorna overlay
   window.addEventListener('scroll', () => {

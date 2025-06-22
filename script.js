@@ -18,9 +18,7 @@
     const yyyy = d.getFullYear();
     const hh   = String(d.getHours()).padStart(2,'0');
     const min  = String(d.getMinutes()).padStart(2,'0');
-    const ss   = String(d.getSeconds()).padStart(2,'0');
-    // solo il colon tra ore e minuti lampeggia
-    const timeStr = `${hh}<span class="blink-colon">:</span>${min}:${ss}`;
+    const timeStr = `${hh}<span class="blink-colon">:</span>${min}`;
     return `macedonia01<br>${dd}/${mm}/${yyyy} ${timeStr}`;
   }
 

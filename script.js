@@ -1,5 +1,5 @@
 (function(){
-  const frameCount = 13;
+  const frameCount = 14;
   const seqImg     = document.getElementById('sequence');
   const overlay    = document.getElementById('overlay');
   const cache      = [];
